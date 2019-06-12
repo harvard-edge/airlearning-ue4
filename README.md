@@ -1,4 +1,4 @@
-# Environment Generator
+# Air Learning Environment Generator
 Air Learning environment generator is built on top of UE-4 game engine. More information on the environment generator is available in the [paper](https://arxiv.org/pdf/1906.00421.pdf)
 
 In this page we give step by step instruction to build the environment generator and get it up and running. If you have read the paper, then this wiki will give instruction on setting up the portion highlighted in red in the Air Learning Infrastructure:

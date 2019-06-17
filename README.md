@@ -24,7 +24,8 @@ In this version of Air Learning, users can configure the following parameters:
 The following instructions are tested on Windows 10 machine and assume you have the following softwares already installed.
 1) Windows 10 System 
 2) Unreal Engine 4.18.3
-3) Visual Studio Community 2017 (Version 15.7.1)
+3) Visual Studio Community 2017 (Version 15.7.1) 
+4) Select Windows 8.1 SDK when installing Visual Studio
 
 ## Installing from source (Tested on Windows 10)
 

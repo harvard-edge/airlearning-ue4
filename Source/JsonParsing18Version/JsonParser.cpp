@@ -22,8 +22,8 @@ void AJsonParser::BeginPlay()
 
 	GLog->Log("beginplay started");
 	
-	try
-	{
+	//try
+	//{
 		const FString JsonFilePath = FPaths::ProjectContentDir() + "/JsonFiles/EnvGenConfig.json";
 		FString JsonString; //Json converted to FString
 
@@ -74,15 +74,33 @@ void AJsonParser::BeginPlay()
 			{
 				GLog->Log("name:" + VelocityRange[index]);
 			}
+
+			// for env-gen flavor
+
+			EnvGenFlavor = Main.GameSetting.EnvGenFlavor;
+
+			// for normal distribution
+
+			GridSize = Main.GameSetting.GridSize;
+			PeakCongestion = Main.GameSetting.PeakCongestion;
+			SpreadOfObstacles = Main.GameSetting.SpreadOfObstacles;
+			GapSize = Main.GameSetting.GapSize;
+
+			// for centroids
+
+			Centroid1 = Main.GameSetting.Centroid1;
+			Centroid2 = Main.GameSetting.Centroid2;
+			Centroid3 = Main.GameSetting.Centroid3;
 		}
 		else
-			throw 0;
+			//throw 0;
+			GLog->Log("JSON file is not valid");
 		
-	}
-	catch (...)
-	{
-		GLog->Log("JSON file is not valid");
-	}
+	//}
+	//catch (...)
+	//{
+	//	GLog->Log("JSON file is not valid");
+	//}
 
 	
 

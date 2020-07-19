@@ -198,4 +198,7 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 		TArray <FString> Centroid3;
+
+	UFUNCTION(BlueprintCallable, Category = "C++ interface")
+		void dumpObstacleCoords(FString filename);
 };
